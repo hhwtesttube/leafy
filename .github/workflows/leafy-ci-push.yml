@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./leafy-frontend
-          push: false
+          push: true
           tags: devwikirepo/leafy-frontend:${{ github.sha }}
           load: true
 
@@ -31,6 +31,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./leafy-backend
-          push: false
+          push: true
           tags: devwikirepo/leafy-backend:${{ github.sha }}
           load: true

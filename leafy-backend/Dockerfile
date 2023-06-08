@@ -13,8 +13,7 @@ RUN gradle dependencies --no-daemon
 COPY . /app
 
 # 테스트 실행 
-RUN ls -al
-RUN ls -al /
+RUN chmod +x ./gradlew
 RUN ./gradlew test
 
 # Gradle 빌드를 실행하여 JAR 파일 생성

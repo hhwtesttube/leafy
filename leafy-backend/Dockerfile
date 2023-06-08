@@ -12,6 +12,9 @@ RUN gradle dependencies --no-daemon
 # 호스트 머신의 소스코드를 작업 디렉토리로 복사
 COPY . /app
 
+# 테스트 실행 
+RUN gradlew test
+
 # Gradle 빌드를 실행하여 JAR 파일 생성
 RUN gradle clean build --no-daemon
 

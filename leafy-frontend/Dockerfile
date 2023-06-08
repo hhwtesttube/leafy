@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json .
 COPY package-lock.json .
 
-# 테스트 실행
+# 테스트 실행 
 RUN npm test
 
 # 라이브러리 설치

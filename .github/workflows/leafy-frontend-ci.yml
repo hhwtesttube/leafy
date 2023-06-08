@@ -3,7 +3,7 @@ name: Leafy Frontend Docker Image Build And Push CI
 on:
   push:
     paths:
-      - 'leafy-backend/**'
+      - 'leafy-frontend/**'
       
 jobs:
   build:
